@@ -1,0 +1,17 @@
+// 初始化样式
+@import "./reset";
+// 公用样式
+@import "./common";
+// 常量部分
+@import "./constant/index.scss";
+
+@import "./element.new.scss";
+
+
+.app-container {
+  // position: relative;
+  width: 375px;
+  margin: 0 auto;
+  padding: 16px;
+}
+ 

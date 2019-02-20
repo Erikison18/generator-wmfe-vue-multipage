@@ -1,0 +1,325 @@
+// 常量部分
+@import "./constant/index.scss";
+
+body {
+  font-family: "微软雅黑";
+  font-size: 0.12rem;
+}
+ 
+.leaf-level1 {
+  background: url("../../../static/images/leaf/level1.png") no-repeat;
+  background-size: 100% 100%;
+}
+.leaf-level2 {
+  background: url("../../../static/images/leaf/level2.png") no-repeat;
+  background-size: 100% 100%;
+}
+.leaf-level3 {
+  background: url("../../../static/images/leaf/level3.png") no-repeat;
+  background-size: 100% 100%;
+}
+.leaf-level4 {
+  background: url("../../../static/images/leaf/level4.png") no-repeat;
+  background-size: 100% 100%;
+}
+.leaf-level5 {
+  background: url("../../../static/images/leaf/level5.png") no-repeat;
+  background-size: 100% 100%;
+}
+.leaf-level6 {
+  background: url("../../../static/images/leaf/level6.png") no-repeat;
+  background-size: 100% 100%;
+}
+.iaqi-level0 {
+  color: $off-line-c1;
+}
+.iaqi-level1 {
+  color: $iaqi-level1-c1;
+}
+.iaqi-level2 {
+  color: $iaqi-level2-c1;
+}
+.iaqi-level3 {
+  color: $iaqi-level3-c1;
+}
+.iaqi-level4 {
+  color: $iaqi-level4-c1;
+}
+.iaqi-level5 {
+  color:$iaqi-level5-c1;
+}
+
+// 温湿度等级
+.level1 {
+  color: #32A3F8;
+}
+.level2 {
+  color: #77E750;
+}
+.level3 {
+  color: #F93148;
+}
+// 室内舒适度等级
+.inlevel0 {
+  color: #77E750;
+}
+.inlevel1 {
+  color: #BCE329;
+}
+.inlevel2 {
+  color: #FFDF02;
+}
+.inlevel3 {
+  color: #F67825;
+}
+.inlevel4 {
+  color:#F93148;
+}
+.inlevel5 {
+  color: #00E69A;
+}
+.inlevel6 {
+  color: #0EDAD3;
+}
+.inlevel7 {
+  color: #00DCFF;
+}
+.inlevel8 {
+  color: #32A3F8;
+}
+
+
+// 减少出行
+i.jscx {
+  background: url("../../assets/images/airQuality/cx.png") no-repeat;
+  background-size: 100% 100%;
+}
+// 开新风或净化器
+i.purifier,
+i.jh {
+  background: url("../../assets/images/airQuality/jh.png") no-repeat;
+  background-size: 100% 100%;
+}
+// 正常出行
+i.zc {
+  background: url("../../assets/images/airQuality/zc.png") no-repeat;
+  background-size: 100% 100%;
+}
+// 口罩
+i.kz {
+  background: url("../../assets/images/airQuality/kz.png") no-repeat;
+  background-size: 100% 100%;
+}
+// 雨伞
+i.ys {
+  background: url("../../assets/images/airQuality/ys.png") no-repeat;
+  background-size: 100% 100%;
+}
+// 开新风或净化器
+i.purifier,
+i.jh {
+  background: url("../../assets/images/airQuality/jh.png") no-repeat;
+  background-size: 100% 100%;
+}
+// 正常出行
+i.zc {
+  background: url("../../assets/images/airQuality/zc.png") no-repeat;
+  background-size: 100% 100%;
+}
+// 口罩
+i.kz {
+  background: url("../../assets/images/airQuality/kz.png") no-repeat;
+  background-size: 100% 100%;
+}
+// 雨伞
+i.ys {
+  background: url("../../assets/images/airQuality/ys.png") no-repeat;
+  background-size: 100% 100%;
+}
+// 开窗
+i.window,
+i.kc {
+  background: url("../../assets/images/airQuality/kc.png") no-repeat;
+  background-size: 100% 100%;
+}
+i.airconditioner {
+  background: url("../../assets/images/airQuality/airconditioner.png") no-repeat;
+  background-size: 100% 100%;
+}
+i.comfortable {
+  background: url("../../assets/images/airQuality/comfortable.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+
+.add-button {
+  background-image: linear-gradient(223deg, #6CCAFF 0%, #498FFF 100%);
+  color: #fff;
+  font-size: 16px;
+  width: 275px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 55px;
+  text-align: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 5px 10px rgba(108, 202, 255, 0.5);
+}
+
+// 公用图标================== 
+// 设备图标
+.equipment-icon {
+  @include set-icon;
+  &::before {
+    background: url("../../assets/images/icon/equipment.png") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-right: 8px;
+  }
+  p {
+    float: left;
+    height: 32px;
+    margin-top: -3px; /*no*/
+    line-height: 16px; 
+    &.lh24 {
+      line-height: 22px;
+      margin: 0;
+    }
+    span {
+      display: block;
+      width: 100%;
+      &:nth-child(2) {
+       transform: scale(0.85);
+       margin-left: -6px; /*no*/
+     }
+    }
+  }
+}
+// 编辑
+.edit-icon{
+  @include set-icon;
+  &::before {
+    background: url("../../assets/images/icon/edit.png") no-repeat;
+    background-size: 100% 100%;
+    
+  }
+}
+// 详情
+.detail-icon{
+  @include set-icon;
+  &::before {
+    background: url("../../assets/images/icon/edit.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.detail-icon{
+  @include set-icon;
+  &::before {
+    background: url("../../assets/images/icon/detail.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.collect-icon2 {
+  @include set-icon;
+  &::before {
+    background: url("../../assets/images/icon/collect2.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.collect-icon2-dis {
+  @include set-icon;
+  &::before {
+    background: url("../../assets/images/icon/collect2-dis.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+// 收藏
+.collect-icon {
+  width: 24px;
+  height: 24px;
+  float: right;
+  display: block;
+}
+.collected-icon {
+  background: url("../../assets/images/icon/collect.png") no-repeat;
+  background-size:  100% 100%;
+}
+.not-collect-icon {
+  background: url("../../assets/images/icon/cancel-collect.png") no-repeat;
+  background-size:  100% 100%;
+}
+
+
+.loading {
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+  &.loaded{
+    color: #999;
+    &::before {
+      display: none;
+    }
+  }
+  &::before{
+    width: 24px;
+    height: 24px;
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+     background: url("../../assets/images/icon/loading.png") no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+    animation: spin 2s linear infinite;
+  }
+}
+
+.refreshContainer{ 
+  position: fixed; 
+  width: 100%; 
+  line-height: 55px; 
+  text-align: center; 
+  left: 0; 
+  top: 0; 
+  color:#A5AAB2;
+  z-index: -1;
+  opacity: 0;
+  i{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../../assets/images/icon/loading.png") no-repeat center center;
+    background-size: cover;
+    margin-right: 5px;
+    animation: spin 2s linear infinite;
+  }
+}
+
+/*所有污染源下标统一使用sub*/
+sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sub {
+  font-size: 12px;
+  transform: scale(0.6);
+  bottom: -2px;
+  display: inline-block;
+  left: -1px; /*no*/
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
